@@ -251,6 +251,14 @@ async function addTagsToPost(postId, tagList) {
     }
 }
 
+async function getAllTags() {
+    const { rows } = await client.query(`
+    SELECT * FROM tags;
+    `);
+
+    return rows;
+}
+
 async function createTags(tagList) {
     if (tagList.length === 0) {
         return;
@@ -294,5 +302,6 @@ module.exports = {
     getAllPosts,
     getPostsByTagName,
     addTagsToPost,
+    getAllTags,
     createTags,
 };
