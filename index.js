@@ -1,5 +1,3 @@
-// POST /api/users/register
-// POST /api/users/login
 // DELETE /api/users/:id
 
 // GET /api/posts
@@ -7,7 +5,6 @@
 // PATCH /api/posts/:id
 // DELETE /api/posts/:id
 
-// GET /api/tags
 // GET /api/tags/:tagName/posts
 
 // server.post('/api/users/register', () =>{});
