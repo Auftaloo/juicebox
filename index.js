@@ -14,10 +14,22 @@
 // server.post('/api/users/login', () => {});
 // server.delete('/api/users/:id', () => {});
 
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+// <meta charset="utf-8">
+// <title>Error</title>
+// </head>
+// <body>
+// <pre>Cannot GET /what</pre>
+// </body>
+// </html>
+
 const PORT = 3000;
 const express = require('express');
 const morgan = require('morgan');
 const server = express();
+require('dotenv').config();
 
 const { client } = require('./db');
 client.connect();
